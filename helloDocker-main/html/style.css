@@ -1,14 +1,30 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: 'Helvetica', sans-serif;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-header {
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
-    padding: 20px;
 }
 
 h1 {
-    font-weight: bold;
+    color: #667eea;
+    margin: 0 0 20px 0;
+    font-size: 2em;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+    margin: 0;
 }
