@@ -1,15 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi App CI/CD</title>
+    <title>CI/CD Pipeline - Kubernetes Deploy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>¡Hola desde Docker y Kubernetes!</h1>
-        <p>Esta es una aplicación desplegada con CI/CD</p>
+        <div class="header">
+            <div class="logo">
+                <svg width="50" height="50" viewBox="0 0 50 50">
+                    <circle cx="25" cy="25" r="20" fill="none" stroke="#00d4ff" stroke-width="2"/>
+                    <circle cx="25" cy="25" r="15" fill="none" stroke="#00d4ff" stroke-width="2"/>
+                    <circle cx="25" cy="25" r="10" fill="none" stroke="#00d4ff" stroke-width="2"/>
+                    <circle cx="25" cy="25" r="3" fill="#00d4ff"/>
+                </svg>
+            </div>
+            <h1>CI/CD Pipeline</h1>
+            <p class="subtitle">Kubernetes • Docker • Jenkins</p>
+        </div>
+
+        <div class="status-cards">
+            <div class="card">
+                <div class="card-icon">🚀</div>
+                <h3>Deployment</h3>
+                <p class="status-success">Active</p>
+                <span class="detail">2 réplicas corriendo</span>
+            </div>
+            <div class="card">
+                <div class="card-icon">🐳</div>
+                <h3>Docker</h3>
+                <p class="status-success">Running</p>
+                <span class="detail">Imagen actualizada</span>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚙️</div>
+                <h3>Jenkins</h3>
+                <p class="status-success">Success</p>
+                <span class="detail">Build #7 exitoso</span>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h2>¡Aplicación Desplegada Exitosamente!</h2>
+            <p class="description">
+                Esta aplicación ha sido desplegada automáticamente mediante un pipeline 
+                completo de CI/CD utilizando Jenkins, Docker y Kubernetes.
+            </p>
+            
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <span class="tech-badge">Jenkins</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-badge">Docker</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-badge">Kubernetes</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-badge">GitHub</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Desarrollado con ❤️ usando tecnologías modernas de DevOps</p>
+        </div>
     </div>
 </body>
 </html>
