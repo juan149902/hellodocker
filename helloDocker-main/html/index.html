@@ -7,118 +7,133 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-animation">
-        <div class="grid-overlay"></div>
-    </div>
-    
     <div class="container">
-        <div class="header">
-            <div class="logo-container">
-                <div class="hexagon">
-                    <div class="hexagon-inner">
-                        <span class="logo-text">K8s</span>
+        <header class="header">
+            <div class="logo">
+                <div class="logo-circle">
+                    <div class="logo-inner"></div>
+                </div>
+            </div>
+            <h1 class="main-title">CI/CD PIPELINE</h1>
+            <p class="subtitle">Kubernetes Deployment System</p>
+            <div class="header-line"></div>
+        </header>
+
+        <section class="status-section">
+            <h2 class="section-title">System Status</h2>
+            <div class="status-grid">
+                <div class="status-card">
+                    <div class="card-header">
+                        <span class="card-number">01</span>
+                        <span class="status-badge active">ACTIVE</span>
+                    </div>
+                    <h3 class="card-title">Pipeline Status</h3>
+                    <p class="card-description">Build #7 completed successfully</p>
+                    <div class="card-footer">
+                        <span class="timestamp">2 minutes ago</span>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="card-header">
+                        <span class="card-number">02</span>
+                        <span class="status-badge active">RUNNING</span>
+                    </div>
+                    <h3 class="card-title">Docker Container</h3>
+                    <p class="card-description">juan1499/hellodocker:latest</p>
+                    <div class="card-footer">
+                        <span class="timestamp">Image updated</span>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="card-header">
+                        <span class="card-number">03</span>
+                        <span class="status-badge active">DEPLOYED</span>
+                    </div>
+                    <h3 class="card-title">Kubernetes Cluster</h3>
+                    <p class="card-description">2 replicas running healthy</p>
+                    <div class="card-footer">
+                        <span class="timestamp">All pods ready</span>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="card-header">
+                        <span class="card-number">04</span>
+                        <span class="status-badge active">AVAILABLE</span>
+                    </div>
+                    <h3 class="card-title">Service Endpoint</h3>
+                    <p class="card-description">NodePort 30080 exposed</p>
+                    <div class="card-footer">
+                        <span class="timestamp">Online</span>
                     </div>
                 </div>
             </div>
-            <h1 class="title">CI/CD PIPELINE</h1>
-            <div class="divider"></div>
-            <p class="subtitle">KUBERNETES DEPLOYMENT SYSTEM</p>
-        </div>
+        </section>
 
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-icon">⚡</div>
-                <div class="stat-content">
-                    <h3>Pipeline Status</h3>
-                    <p class="stat-value success">ACTIVE</p>
-                    <span class="stat-detail">Build #7 • 2 min ago</span>
-                </div>
-            </div>
-
-            <div class="stat-card">
-                <div class="stat-icon">🐳</div>
-                <div class="stat-content">
-                    <h3>Docker Image</h3>
-                    <p class="stat-value success">RUNNING</p>
-                    <span class="stat-detail">juan1499/hellodocker:latest</span>
-                </div>
-            </div>
-
-            <div class="stat-card">
-                <div class="stat-icon">☸️</div>
-                <div class="stat-content">
-                    <h3>Kubernetes</h3>
-                    <p class="stat-value success">DEPLOYED</p>
-                    <span class="stat-detail">2 Replicas • Healthy</span>
-                </div>
-            </div>
-
-            <div class="stat-card">
-                <div class="stat-icon">✓</div>
-                <div class="stat-content">
-                    <h3>Service</h3>
-                    <p class="stat-value success">AVAILABLE</p>
-                    <span class="stat-detail">NodePort 30080</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="deployment-info">
-            <div class="info-header">
-                <h2>DEPLOYMENT OVERVIEW</h2>
-                <span class="status-indicator">● ONLINE</span>
-            </div>
-            
-            <div class="info-content">
-                <p class="description">
-                    Aplicación desplegada exitosamente mediante pipeline automatizado de CI/CD.
-                    Utilizando Jenkins para integración continua, Docker para containerización
-                    y Kubernetes para orquestación de contenedores.
-                </p>
-                
-                <div class="metrics">
-                    <div class="metric">
-                        <span class="metric-label">UPTIME</span>
-                        <span class="metric-value">99.9%</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-label">RESPONSE</span>
-                        <span class="metric-value">45ms</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-label">PODS</span>
-                        <span class="metric-value">2/2</span>
+        <section class="details-section">
+            <h2 class="section-title">Deployment Overview</h2>
+            <div class="details-card">
+                <div class="details-content">
+                    <p class="details-text">
+                        This application has been successfully deployed through an automated CI/CD pipeline. 
+                        The system utilizes Jenkins for continuous integration, Docker for containerization, 
+                        and Kubernetes for orchestration, ensuring reliable and scalable deployment.
+                    </p>
+                    <div class="metrics-row">
+                        <div class="metric-item">
+                            <span class="metric-value">99.9%</span>
+                            <span class="metric-label">Uptime</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">45ms</span>
+                            <span class="metric-label">Response Time</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">2/2</span>
+                            <span class="metric-label">Pods Ready</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">100%</span>
+                            <span class="metric-label">Success Rate</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="tech-stack-section">
-            <h3 class="section-title">TECHNOLOGY STACK</h3>
+        <section class="tech-section">
+            <h2 class="section-title">Technology Stack</h2>
             <div class="tech-grid">
-                <div class="tech-item">
+                <div class="tech-card">
                     <div class="tech-icon">J</div>
-                    <span>Jenkins</span>
+                    <h4 class="tech-name">Jenkins</h4>
+                    <p class="tech-desc">Automation Server</p>
                 </div>
-                <div class="tech-item">
+                <div class="tech-card">
                     <div class="tech-icon">D</div>
-                    <span>Docker</span>
+                    <h4 class="tech-name">Docker</h4>
+                    <p class="tech-desc">Containerization</p>
                 </div>
-                <div class="tech-item">
+                <div class="tech-card">
                     <div class="tech-icon">K</div>
-                    <span>Kubernetes</span>
+                    <h4 class="tech-name">Kubernetes</h4>
+                    <p class="tech-desc">Orchestration</p>
                 </div>
-                <div class="tech-item">
+                <div class="tech-card">
                     <div class="tech-icon">G</div>
-                    <span>GitHub</span>
+                    <h4 class="tech-name">GitHub</h4>
+                    <p class="tech-desc">Version Control</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="footer">
+        <footer class="footer">
             <div class="footer-line"></div>
-            <p>POWERED BY DEVOPS • ENGINEERED FOR EXCELLENCE</p>
-        </div>
+            <p class="footer-text">POWERED BY DEVOPS TECHNOLOGIES • ENGINEERED FOR EXCELLENCE</p>
+            <p class="footer-copyright">© 2026 CI/CD Pipeline System</p>
+        </footer>
     </div>
 </body>
 </html>
